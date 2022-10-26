@@ -42,11 +42,11 @@ export const Dashboard = () => {
             style={{
               width: 500,
               marginLeft: 200,
-              backgroundColor: "rgb(14, 47, 105)",
+              backgroundColor: "#fff",
               borderColor: "#333333",
               padding: 10,
             }}
-            suffix={<SearchOutlined style={{color: 'white'}} />}
+            suffix={<SearchOutlined />}
           />
         </Header>
         <Content

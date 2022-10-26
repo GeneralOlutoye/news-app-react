@@ -44,8 +44,8 @@ export const Footballs = () => {
             style={{
               width: 500,
               marginLeft: 200,
-              backgroundColor: "rgb(14, 47, 105)",
-              borderColor: "#fff",
+              backgroundColor: "#fff",
+              borderColor: "#333333",
               padding: 10,
             }}
             suffix={<SearchOutlined />}

@@ -20,7 +20,7 @@ export const Politic = () => {
           mode="inline"
           defaultSelectedKeys={["2"]}
           items={MenuItems}
-          style={{color: '#ffffff'}}
+          style={{ color: '#ffffff' }}
         />
         <hr />
         <Menu
@@ -44,7 +44,7 @@ export const Politic = () => {
             style={{
               width: 500,
               marginLeft: 200,
-              backgroundColor: "rgb(14, 47, 105)",
+              backgroundColor: "#fff",
               borderColor: "#333333",
               padding: 10,
             }}
@@ -58,16 +58,16 @@ export const Politic = () => {
             padding: 24,
           }}
         >
-                     
-            <Row
-              aria-orientation="horizontal"
-              className="rows"
-              gutter={20}
-            >
-              <Politics />
-            </Row>
-        
-          
+
+          <Row
+            aria-orientation="horizontal"
+            className="rows"
+            gutter={20}
+          >
+            <Politics />
+          </Row>
+
+
         </Content>
       </Layout>
     </Layout>

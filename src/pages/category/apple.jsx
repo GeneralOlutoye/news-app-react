@@ -9,7 +9,7 @@ export const Apple = () => {
   const FetchData = async () => {
     await axios
       .get(
-        "https://newsapi.org/v2/top-headlines?q=apple&from=2022-08-06&to=2022-08-06&sortBy=popularity&apiKey=de2621bf7b244829905edff4d766a932"
+        "https://newsapi.org/v2/top-headlines?q=apple&from=2022-08-01&to=2022-12-31&sortBy=popularity&apiKey=de2621bf7b244829905edff4d766a932"
       )
       .then((response) => {
         setData(response.data);

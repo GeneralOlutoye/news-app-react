@@ -20,7 +20,7 @@ export const Apples = () => {
           mode="inline"
           defaultSelectedKeys={["5"]}
           items={MenuItems}
-          style={{color: '#ffffff'}}
+          style={{ color: '#ffffff' }}
         />
         <hr />
         <Menu
@@ -44,9 +44,9 @@ export const Apples = () => {
             style={{
               width: 500,
               marginLeft: 200,
-              backgroundColor: "rgb(14, 47, 105)",
-              borderColor: "#fff",
-              padding: 10,
+              backgroundColor: "#fff",
+              borderColor: "#333333",
+              padding: 5,
             }}
             suffix={<SearchOutlined />}
           />
@@ -58,15 +58,15 @@ export const Apples = () => {
             padding: 24,
           }}
         >
-          
-            <Row
-              aria-orientation="horizontal"
-              className="rows"
-              gutter={20}
-            >
-              <Apple />
-            </Row>
-          
+
+          <Row
+            aria-orientation="horizontal"
+            className="rows"
+            gutter={20}
+          >
+            <Apple />
+          </Row>
+
         </Content>
       </Layout>
     </Layout>

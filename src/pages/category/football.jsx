@@ -9,10 +9,11 @@ export const Football = () => {
   const FetchData = async () => {
     await axios
       .get(
-        "https://newsapi.org/v2/top-headlines?q=football&from=2022-08-06&to=2022-08-06&sortBy=popularity&apiKey=de2621bf7b244829905edff4d766a932"
+        "https://newsapi.org/v2/top-headlines?q=football&from=2022-10-01&to=2022-10-30&sortBy=popularity&apiKey=de2621bf7b244829905edff4d766a932"
       )
       .then((response) => {
         setData(response.data);
+        console.log(response.data);
       });
   };
 
@@ -22,11 +23,11 @@ export const Football = () => {
 
   return (
     <>
-      {data?.articles?.map((items, index) => (
+      {data?.articles?.results?.map((items, index) => (
         <div key={index}>
           <Card className="card-wrapper">
             <img
-              src={items.urlToImage === null || "" ? img : items.urlToImage}
+              src={items.image_url === null || "" ? img : items.image_url}
               width={220}
               height={130}
               alt="imag1"
@@ -36,10 +37,10 @@ export const Football = () => {
               Author:{" "}
               {items.author === null || ""
                 ? "no author"
-                : items?.author?.substring(0, 20)}
+                : items?.creator?.substring(0, 20)}
             </p>
             <Button
-              onClick={() => (window.location.href = items.url)}
+              onClick={() => (window.location.href = items.link)}
               className="read-more"
               type="primary"
             >
